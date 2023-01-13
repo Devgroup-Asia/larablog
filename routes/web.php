@@ -22,3 +22,4 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 
 Route::resource('posts','App\Http\Controllers\PostsController');
 
+Route::get('/email', [App\Http\Controllers\MailController::class, 'index']);
